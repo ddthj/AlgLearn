@@ -7,10 +7,12 @@ Alglearn is a tool to help speedcubers learn sets of algorythms and help
 them stay in practice.
 
 Todo List:
--create algorythms [#]
--create algorythm sets  [] 
+-create algorythms [#] 
 -create ability to change active sets []
 -create practice mode [#]
+-Have timer start on spacebar release []
+-Ignore inverse on 180 turns []
+-Make a better readme []
 
 Requires:
 Pygame on Python 3+
