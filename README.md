@@ -11,10 +11,12 @@ In mode 2, AlgLearn chooses the algorithm with your lowest average turns per sec
 In mode 3, Alglearn chooses any algorithm with an average above a set time in the format: #!mode:3:<time to beat>
 
 The minimum information required to create a custom algset.txt file is as follows:
-'''
+
+```
 #!mode:2 
 Name:Algorithm
-'''
+```
+
 Note that any mode could be used
 
 If for some reason AlgLearn is only giving you one algorithm, you might have an improperly formatted algset file.
