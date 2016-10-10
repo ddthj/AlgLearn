@@ -84,11 +84,17 @@ def pickWeak(algset):
 def pickSlow(algset):
     lowest = 99.0
     index = 0
+    useable = []
     for i in range(0,len(algset)):
+        if algset[i].tps == 0:
+            useable.append(algset[i])
         if algset[i].tps < lowest:
             lowest = algset[i].tps
             index = i
-    return algset[index]
+    if len(useable) > 2:
+        return useable[random.randint(0,len(useable)-1)]
+    else:
+        return algset[index]
 
 def pickCut(algset,setting):
     he = []
@@ -178,7 +184,7 @@ try:
 except Exception as e:
     print(e)
     algset = []
-    algset.append(alg("Small L Variant","F R U R' U' R U R' U' F'"))
+    algset.append(alg("algset.txt error reading file!","F"))
     
 picked = False
 space = False

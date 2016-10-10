@@ -1,5 +1,5 @@
-#AlgLearn config, used for holding the algorthms you wish to practice and the mode option
-#For example algorythm entry, see the ones provided already
+#AlgLearn config, used for holding the algorithms you wish to practice and the mode option
+#For example algorithm entry, see the ones provided already
 #
 #Using anything other than just the letters/numbers and ' within the alg may cause issues with the program
 #Any line with a hashtag will be ignored other than the mode line
