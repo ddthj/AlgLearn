@@ -1,0 +1,27 @@
+#AlgLearn config, used for holding the algorthms you wish to practice and the mode option
+#For example algorythm entry, see the ones provided already
+#
+#Using anything other than just the letters/numbers and ' within the alg may cause issues with the program
+#Any line with a hashtag will be ignored other than the mode line
+#
+#The mode line defines what mode the program will run in and any additional settings for that mode
+#mode 0 chooses algs randomly
+#mode 1 chooses the alg with highest average time
+#mode 2 chooses the alg with the lowest turns per second - probably best one to use
+#mode 3 chooses any alg with an average above a set number (format: mode:3:<time to beat>)
+#note - if you beat your time setting in mode 3 for all algs, it automatically decreases your time to beat
+#!mode:2
+#
+Small L Varient:F R U R' U' R U R' U' F'
+T with even colors:R U R' U' R' F R F'
+T with odd colors:F R U R' U' F'
+Sune:R U2 R' U' R U' R'
+Anti-Sune:R U R' U R U2 R'
+Headlights:R2 D' R U2 R' D R U2 R
+Car:F R U R' U' R U R' U' R U R' U' F'
+Wagon:f R U R' U' f' F R U R' U' F'
+Diamond:F' r U R' U' r' F R
+Chamelion:r U R' U' r' F R F'
+T-Permutation:R U R' U' R' F R2 U' R' U' R U R' F'
+Y-Permutation:F R U' R' U' R U R' F' R U R' U' R' F R F'
+H-Permutation:M2 U M2 U2 M2 U M2
