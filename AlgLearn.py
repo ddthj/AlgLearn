@@ -64,18 +64,22 @@ def getScramble(alg):
 def pickWeak(algset):
     #print(algset)
     maxTime = float(0)
-    index = 0
     useable = []
     for i in range(0,len(algset)):
-        #print(str(algset[i].average)+" >? "+str("maxTime"))
-        if algset[i].average < 0.0:
-            maxTime = 99
-            #print("found unused!")
-            return algset[i]
-        elif algset[i].average > maxTime:
+        if algset[i].average < 0.0 or algset[i].average + 0.25 >= maxTime:
+            useable.append(algset[i])
+        if algset[i].average > maxTime:
             maxTime = algset[i].average
-            index = i
-    return algset[index]
+            useable = []
+            useable.append(algset[i])
+            for item in algset:
+                if item.average < 0.0 or item.average + 0.25 > maxTime:
+                    if item.name != algset[i].name:
+                        useable.append(item)
+    if len(useable) <=1:
+        return useable[0]
+    else:
+        return useable[random.randint(0,len(useable)-1)]
 
 def pickSlow(algset):
     lowest = 99.0
